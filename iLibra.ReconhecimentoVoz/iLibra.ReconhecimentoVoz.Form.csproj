@@ -88,6 +88,12 @@
     <None Include="Resources\voice-recognition.png" />
     <Content Include="voice-recognition.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iLibra.ReconhecimentoVoz.Speech\iLibra.ReconhecimentoVoz.Reconhecimento.csproj">
+      <Project>{CB789379-6BC1-4E2C-8F39-52674337FF63}</Project>
+      <Name>iLibra.ReconhecimentoVoz.Reconhecimento</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

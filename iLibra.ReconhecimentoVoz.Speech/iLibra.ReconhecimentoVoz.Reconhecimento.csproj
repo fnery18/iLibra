@@ -36,7 +36,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,8 +47,145 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reconhecimento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acessibilidade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aula.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bem vindo alunos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boa noite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boa tarde.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bom dia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computador.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engenharia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Faculdade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libras.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linguagem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ola.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Programação.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tchau.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tecnologia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
