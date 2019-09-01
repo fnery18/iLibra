@@ -1,4 +1,4 @@
-﻿using iLibra.ReconhecimentoVoz.Speech.Properties;
+﻿using iLibra.ReconhecimentoVoz.Reconhecimento.Properties;
 using Microsoft.Speech.Recognition;
 using System.Drawing;
 using System.Globalization;

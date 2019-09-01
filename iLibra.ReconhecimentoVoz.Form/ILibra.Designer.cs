@@ -1,4 +1,4 @@
-﻿namespace iLibra.ReconhecimentoVoz
+﻿namespace iLibra.ReconhecimentoVoz.Forms
 {
     partial class ILibra
     {
@@ -34,8 +34,8 @@
             this.LblSubTitulo = new System.Windows.Forms.Label();
             this.PanelLibraBorda = new System.Windows.Forms.Panel();
             this.PanelLibraCentro = new System.Windows.Forms.Panel();
-            this.LblPalavra = new System.Windows.Forms.Label();
             this.ImgPalavra = new System.Windows.Forms.PictureBox();
+            this.LblPalavra = new System.Windows.Forms.Label();
             this.ImgIcone = new System.Windows.Forms.PictureBox();
             this.PanelLibraBorda.SuspendLayout();
             this.PanelLibraCentro.SuspendLayout();
@@ -94,6 +94,15 @@
             this.PanelLibraCentro.Size = new System.Drawing.Size(308, 235);
             this.PanelLibraCentro.TabIndex = 5;
             // 
+            // ImgPalavra
+            // 
+            this.ImgPalavra.Location = new System.Drawing.Point(3, 3);
+            this.ImgPalavra.Name = "ImgPalavra";
+            this.ImgPalavra.Size = new System.Drawing.Size(298, 225);
+            this.ImgPalavra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ImgPalavra.TabIndex = 0;
+            this.ImgPalavra.TabStop = false;
+            // 
             // LblPalavra
             // 
             this.LblPalavra.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,19 +113,10 @@
             this.LblPalavra.Text = "~ Palavra Falada ~";
             this.LblPalavra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ImgPalavra
-            // 
-            this.ImgPalavra.Location = new System.Drawing.Point(3, 3);
-            this.ImgPalavra.Name = "ImgPalavra";
-            this.ImgPalavra.Size = new System.Drawing.Size(298, 225);
-            this.ImgPalavra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ImgPalavra.TabIndex = 0;
-            this.ImgPalavra.TabStop = false;
-            // 
             // ImgIcone
             // 
             this.ImgIcone.BackColor = System.Drawing.Color.Transparent;
-            this.ImgIcone.Image = global::iLibra.ReconhecimentoVoz.Properties.Resources.voice_recognition;
+            this.ImgIcone.Image = global::iLibra.ReconhecimentoVoz.Forms.Properties.Resources.icone;
             this.ImgIcone.Location = new System.Drawing.Point(635, 392);
             this.ImgIcone.Name = "ImgIcone";
             this.ImgIcone.Size = new System.Drawing.Size(95, 80);
@@ -140,7 +140,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ILibra";

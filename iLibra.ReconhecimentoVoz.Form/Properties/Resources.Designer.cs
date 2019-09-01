@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iLibra.ReconhecimentoVoz.Properties {
+namespace iLibra.ReconhecimentoVoz.Forms.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace iLibra.ReconhecimentoVoz.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("iLibra.ReconhecimentoVoz.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("iLibra.ReconhecimentoVoz.Forms.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace iLibra.ReconhecimentoVoz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap oi {
+        internal static System.Drawing.Bitmap icone {
             get {
-                object obj = ResourceManager.GetObject("oi", resourceCulture);
+                object obj = ResourceManager.GetObject("icone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace iLibra.ReconhecimentoVoz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voice_recognition {
+        internal static System.Drawing.Bitmap oi {
             get {
-                object obj = ResourceManager.GetObject("voice-recognition", resourceCulture);
+                object obj = ResourceManager.GetObject("oi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,9 +1,0 @@
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\bin\Debug\iLibra.ReconhecimentoVoz.exe.config
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\bin\Debug\iLibra.ReconhecimentoVoz.exe
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\bin\Debug\iLibra.ReconhecimentoVoz.pdb
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\obj\Debug\iLibra.ReconhecimentoVoz.csprojResolveAssemblyReference.cache
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\obj\Debug\iLibra.ReconhecimentoVoz.ILibra.resources
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\obj\Debug\iLibra.ReconhecimentoVoz.Properties.Resources.resources
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\obj\Debug\iLibra.ReconhecimentoVoz.csproj.GenerateResource.Cache
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\obj\Debug\iLibra.ReconhecimentoVoz.exe
-C:\Users\felip\Documents\GitHub\iLibra\iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz\obj\Debug\iLibra.ReconhecimentoVoz.pdb

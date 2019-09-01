@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iLibra.ReconhecimentoVoz.Speech.Properties {
+namespace iLibra.ReconhecimentoVoz.Reconhecimento.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace iLibra.ReconhecimentoVoz.Speech.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("iLibra.ReconhecimentoVoz.Speech.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("iLibra.ReconhecimentoVoz.Reconhecimento.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

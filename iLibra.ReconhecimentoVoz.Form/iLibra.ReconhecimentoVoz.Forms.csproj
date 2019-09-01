@@ -7,8 +7,8 @@
     <ProjectGuid>{3FB91795-9B0E-4BA6-8345-98F26816594A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>iLibra.ReconhecimentoVoz</RootNamespace>
-    <AssemblyName>iLibra.ReconhecimentoVoz</AssemblyName>
+    <RootNamespace>iLibra.ReconhecimentoVoz.Forms</RootNamespace>
+    <AssemblyName>iLibra.ReconhecimentoVoz.Forms</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -89,7 +89,7 @@
     <Content Include="voice-recognition.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\iLibra.ReconhecimentoVoz.Speech\iLibra.ReconhecimentoVoz.Reconhecimento.csproj">
+    <ProjectReference Include="..\iLibra.ReconhecimentoVoz.Reconhecimento\iLibra.ReconhecimentoVoz.Reconhecimento.csproj">
       <Project>{CB789379-6BC1-4E2C-8F39-52674337FF63}</Project>
       <Name>iLibra.ReconhecimentoVoz.Reconhecimento</Name>
     </ProjectReference>

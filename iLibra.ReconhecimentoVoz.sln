@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iLibra.ReconhecimentoVoz.Form", "iLibra.ReconhecimentoVoz\iLibra.ReconhecimentoVoz.Form.csproj", "{3FB91795-9B0E-4BA6-8345-98F26816594A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iLibra.ReconhecimentoVoz.Forms", "iLibra.ReconhecimentoVoz.Form\iLibra.ReconhecimentoVoz.Forms.csproj", "{3FB91795-9B0E-4BA6-8345-98F26816594A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iLibra.ReconhecimentoVoz.Reconhecimento", "iLibra.ReconhecimentoVoz.Speech\iLibra.ReconhecimentoVoz.Reconhecimento.csproj", "{CB789379-6BC1-4E2C-8F39-52674337FF63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iLibra.ReconhecimentoVoz.Reconhecimento", "iLibra.ReconhecimentoVoz.Reconhecimento\iLibra.ReconhecimentoVoz.Reconhecimento.csproj", "{CB789379-6BC1-4E2C-8F39-52674337FF63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

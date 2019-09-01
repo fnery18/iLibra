@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace iLibra.ReconhecimentoVoz
+namespace iLibra.ReconhecimentoVoz.Forms
 {
     public partial class ILibra : Form
     {

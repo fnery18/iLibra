@@ -7,8 +7,8 @@
     <ProjectGuid>{CB789379-6BC1-4E2C-8F39-52674337FF63}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>iLibra.ReconhecimentoVoz.Speech</RootNamespace>
-    <AssemblyName>iLibra.ReconhecimentoVoz.Speech</AssemblyName>
+    <RootNamespace>iLibra.ReconhecimentoVoz.Reconhecimento</RootNamespace>
+    <AssemblyName>iLibra.ReconhecimentoVoz.Reconhecimento</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
