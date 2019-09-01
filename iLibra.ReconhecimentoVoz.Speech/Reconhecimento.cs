@@ -26,7 +26,7 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
             palavras = new string[]
             {
-                //colocar aqui as novas palavras
+                //colocar aqui as novas palavras e adicionar nos resources o gif com o mesmo nome da palavra
                 "oi","A","Acessibilidade","Aula","B","Bem_vindo_alunos","Boa_noite","Boa_tarde","Bom_dia","C","Computador","D","E","Engenharia","F","Faculdade","G","H","I","J","K","L","Libras","Linguagem","M","N","O","Ola","P","Programação","Q","R","S","T","Tchau","Tecnologia","U","V","W","X","Y","Z"
             };
 
@@ -76,7 +76,7 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
             reconhecedor.LoadGrammarAsync(gramatica);
             reconhecedor.SpeechRecognized += ProcessarReconhecimento;
-            reconhecedor.SpeechDetected += Teste;
+            reconhecedor.SpeechDetected += ProcessarPalavraNaoReconhecida;
 
             reconhecedor.SetInputToDefaultAudioDevice();
 
@@ -86,9 +86,9 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
             ExibirPalavraFalada("Detectando palavra....");
         }
 
-        private void Teste(object sender, SpeechDetectedEventArgs e)
+        private void ProcessarPalavraNaoReconhecida(object sender, SpeechDetectedEventArgs e)
         {
-            ExibirPalavraFalada("palavra não cadastrada");
+            ExibirPalavraFalada("", exibirGif: true);
         }
 
         private void ProcessarReconhecimento(object sender, SpeechRecognizedEventArgs e)
