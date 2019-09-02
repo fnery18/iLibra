@@ -17,5 +17,15 @@ namespace iLibra.ReconhecimentoVoz.Forms
         {
             Close();
         }
+
+        private void PanelLibraCentro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ILibra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -86,6 +86,7 @@
   <ItemGroup>
     <None Include="Resources\oi.gif" />
     <None Include="Resources\voice-recognition.png" />
+    <None Include="Resources\fiap.png" />
     <Content Include="voice-recognition.ico" />
   </ItemGroup>
   <ItemGroup>
