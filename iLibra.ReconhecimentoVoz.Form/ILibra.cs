@@ -6,11 +6,12 @@ namespace iLibra.ReconhecimentoVoz.Forms
 {
     public partial class ILibra : Form
     {
-        private Reconhece _reconhecimento;
+        public Reconhece Reconhecimento { get; }
+
         public ILibra()
         {
             InitializeComponent();
-            _reconhecimento = new Reconhece(ondeExibirResultado: LblPalavra, ondeExibirGif: ImgPalavra);
+            Reconhecimento = new Reconhece(ondeExibirResultado: LblPalavra, ondeExibirGif: ImgPalavra);
         }
 
         private void LblFechar_Click(object sender, EventArgs e)

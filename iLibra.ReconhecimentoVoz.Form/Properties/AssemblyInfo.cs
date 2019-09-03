@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("iLibra.ReconhecimentoVoz")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("iLibra")]
+[assembly: AssemblyDescription("Software de reconhecimento de voz e conversor para libras")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("FIAP")]
 [assembly: AssemblyProduct("iLibra.ReconhecimentoVoz")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]

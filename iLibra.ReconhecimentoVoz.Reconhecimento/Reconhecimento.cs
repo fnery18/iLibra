@@ -1,5 +1,6 @@
 ﻿using iLibra.ReconhecimentoVoz.Reconhecimento.Properties;
 using Microsoft.Speech.Recognition;
+using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Globalization;
@@ -13,10 +14,10 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
     {
         static CultureInfo culture;
         static SpeechRecognitionEngine reconhecedor;
-        SpeechSynthesizer resposta;
-        private string[] palavras;
-        private Label lblResultado;
-        private PictureBox gif;
+        readonly SpeechSynthesizer resposta;
+        private readonly string[] palavras;
+        private readonly Label lblResultado;
+        private readonly PictureBox gif;
         int QuantidadeFrame = 0;
         int FrameAtual = 0;
 
@@ -82,6 +83,9 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
             reconhecedor.LoadGrammarAsync(gramatica);
             reconhecedor.SpeechRecognized += ProcessarReconhecimento;
             reconhecedor.SpeechDetected += ProcessarPalavraNaoReconhecida;
+            reconhecedor.SpeechRecognitionRejected += ProcessarTeste;
+            reconhecedor.RecognizeCompleted += ProcessarTeste2;
+            reconhecedor.SpeechHypothesized += ProcessarTeste3;
 
             reconhecedor.SetInputToDefaultAudioDevice();
 
@@ -89,6 +93,21 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
             reconhecedor.RecognizeAsync(RecognizeMode.Multiple);
             ExibirPalavraFalada("Detectando palavra....");
+        }
+
+        private void ProcessarTeste3(object sender, SpeechHypothesizedEventArgs e)
+        {
+   
+        }
+
+        private void ProcessarTeste2(object sender, RecognizeCompletedEventArgs e)
+        {
+
+        }
+
+        private void ProcessarTeste(object sender, SpeechRecognitionRejectedEventArgs e)
+        {
+            
         }
 
         private void ProcessarPalavraNaoReconhecida(object sender, SpeechDetectedEventArgs e)
@@ -116,11 +135,11 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
                 try
                 {
                     gif.Enabled = true;
-                    gif.Paint += new PaintEventHandler(this.pictureBox1_Paint);
+                    gif.Paint += new PaintEventHandler(PictureBox1_Paint);
                     gif.Image = (Image)Resources.ResourceManager.GetObject(palavraFalada, culture);
 
                     FrameDimension dimension = new FrameDimension(gif.Image.FrameDimensionsList[0]);
-                    this.QuantidadeFrame = gif.Image.GetFrameCount(dimension);
+                    QuantidadeFrame = gif.Image.GetFrameCount(dimension);
 
                 }
                 catch (System.Exception e)
@@ -131,16 +150,16 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
             }
         }
 
-        private void pictureBox1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        private void PictureBox1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            if (this.FrameAtual == this.QuantidadeFrame)
+            if (FrameAtual == QuantidadeFrame)
             {
                 gif.Enabled = false;
                 gif.Image = null;
-                gif.Paint -= new PaintEventHandler(this.pictureBox1_Paint);
-                this.FrameAtual = 0;
+                gif.Paint -= new PaintEventHandler(PictureBox1_Paint);
+                FrameAtual = 0;
             }
-            this.FrameAtual++;
+            FrameAtual++;
         }
     }
 }

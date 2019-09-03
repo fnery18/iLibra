@@ -34,11 +34,11 @@
             this.PanelLibraCentro = new System.Windows.Forms.Panel();
             this.ImgPalavra = new System.Windows.Forms.PictureBox();
             this.LblPalavra = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelLibraBorda.SuspendLayout();
             this.PanelLibraCentro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPalavra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LblFechar
@@ -92,16 +92,16 @@
             this.LblPalavra.Text = "~ Palavra Falada ~";
             this.LblPalavra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // PictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::iLibra.ReconhecimentoVoz.Forms.Properties.Resources.fiap;
-            this.pictureBox1.Location = new System.Drawing.Point(248, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(232, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.PictureBox1.BackColor = System.Drawing.Color.Black;
+            this.PictureBox1.Image = global::iLibra.ReconhecimentoVoz.Forms.Properties.Resources.fiap;
+            this.PictureBox1.Location = new System.Drawing.Point(12, 34);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(708, 37);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox1.TabIndex = 1;
+            this.PictureBox1.TabStop = false;
             // 
             // ILibra
             // 
@@ -109,7 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(732, 466);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.LblPalavra);
             this.Controls.Add(this.PanelLibraBorda);
             this.Controls.Add(this.LblFechar);
@@ -127,7 +127,7 @@
             this.PanelLibraBorda.ResumeLayout(false);
             this.PanelLibraCentro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImgPalavra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Panel PanelLibraCentro;
         private System.Windows.Forms.Label LblPalavra;
         private System.Windows.Forms.PictureBox ImgPalavra;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PictureBox1;
     }
 }
 
