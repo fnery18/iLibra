@@ -32,13 +32,13 @@
             this.LblFechar = new System.Windows.Forms.Label();
             this.PanelLibraBorda = new System.Windows.Forms.Panel();
             this.PanelLibraCentro = new System.Windows.Forms.Panel();
+            this.ImgPalavra = new System.Windows.Forms.PictureBox();
             this.LblPalavra = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ImgPalavra = new System.Windows.Forms.PictureBox();
             this.PanelLibraBorda.SuspendLayout();
             this.PanelLibraCentro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPalavra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LblFechar
@@ -57,20 +57,30 @@
             this.PanelLibraBorda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(20)))), ((int)(((byte)(91)))));
             this.PanelLibraBorda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelLibraBorda.Controls.Add(this.PanelLibraCentro);
-            this.PanelLibraBorda.Location = new System.Drawing.Point(207, 128);
+            this.PanelLibraBorda.Location = new System.Drawing.Point(193, 108);
             this.PanelLibraBorda.Name = "PanelLibraBorda";
-            this.PanelLibraBorda.Size = new System.Drawing.Size(318, 245);
+            this.PanelLibraBorda.Size = new System.Drawing.Size(332, 262);
             this.PanelLibraBorda.TabIndex = 4;
             // 
             // PanelLibraCentro
             // 
             this.PanelLibraCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(20)))), ((int)(((byte)(91)))));
             this.PanelLibraCentro.Controls.Add(this.ImgPalavra);
-            this.PanelLibraCentro.Location = new System.Drawing.Point(4, 4);
+            this.PanelLibraCentro.Location = new System.Drawing.Point(3, 3);
             this.PanelLibraCentro.Name = "PanelLibraCentro";
-            this.PanelLibraCentro.Size = new System.Drawing.Size(308, 235);
+            this.PanelLibraCentro.Size = new System.Drawing.Size(324, 254);
             this.PanelLibraCentro.TabIndex = 5;
             this.PanelLibraCentro.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelLibraCentro_Paint);
+            // 
+            // ImgPalavra
+            // 
+            this.ImgPalavra.BackColor = System.Drawing.Color.Black;
+            this.ImgPalavra.Location = new System.Drawing.Point(0, 0);
+            this.ImgPalavra.Name = "ImgPalavra";
+            this.ImgPalavra.Size = new System.Drawing.Size(323, 254);
+            this.ImgPalavra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ImgPalavra.TabIndex = 0;
+            this.ImgPalavra.TabStop = false;
             // 
             // LblPalavra
             // 
@@ -92,16 +102,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // ImgPalavra
-            // 
-            this.ImgPalavra.BackColor = System.Drawing.Color.Black;
-            this.ImgPalavra.Location = new System.Drawing.Point(3, 3);
-            this.ImgPalavra.Name = "ImgPalavra";
-            this.ImgPalavra.Size = new System.Drawing.Size(298, 225);
-            this.ImgPalavra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ImgPalavra.TabIndex = 0;
-            this.ImgPalavra.TabStop = false;
             // 
             // ILibra
             // 
@@ -126,8 +126,8 @@
             this.Load += new System.EventHandler(this.ILibra_Load);
             this.PanelLibraBorda.ResumeLayout(false);
             this.PanelLibraCentro.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPalavra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
