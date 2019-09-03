@@ -1,6 +1,7 @@
 ﻿using iLibra.ReconhecimentoVoz.Reconhecimento.Properties;
 using Microsoft.Speech.Recognition;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Globalization;
 using System.Linq;
 using System.Speech.Synthesis;
@@ -16,6 +17,8 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
         private string[] palavras;
         private Label lblResultado;
         private PictureBox gif;
+        int QuantidadeFrame = 0;
+        int FrameAtual = 0;
 
         public Reconhece(Label ondeExibirResultado, PictureBox ondeExibirGif)
         {
@@ -27,8 +30,9 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
             palavras = new string[]
             {
                 //colocar aqui as novas palavras e adicionar nos resources o gif com o mesmo nome da palavra
-                "oi","A","Acessibilidade","Aula","B","Bem_vindo_alunos","Boa_noite","Boa_tarde","Bom_dia","C","Computador","D","E","Engenharia","F","Faculdade","G","H","I","J","K","L","Libras","Linguagem","M","N","O","Ola","P","Programação","Q","R","S","T","Tchau","Tecnologia","U","V","W","X","Y","Z"
+                "a","oi","A","Acessibilidade","Aula","B","Bem_vindo_alunos","Boa_noite","Boa_tarde","Bom_dia","C","Computador","D","E","Engenharia","F","Faculdade","G","H","I","J","K","L","Libras","Linguagem","M","N","O","Ola","P","Programação","Q","R","S","T","Tchau","Tecnologia","U","V","W","X","Y","Z"
             };
+
 
             AjustaVolume();
 
@@ -52,6 +56,7 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
                 var construtorGramatica = new GrammarBuilder();
                 construtorGramatica.Append(escolhas);
+
 
                 ExecutaReconhecimento(gramatica: new Grammar(construtorGramatica));
 
@@ -88,7 +93,7 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
         private void ProcessarPalavraNaoReconhecida(object sender, SpeechDetectedEventArgs e)
         {
-            ExibirPalavraFalada("", exibirGif: true);
+            ExibirPalavraFalada("", exibirGif: false);
         }
 
         private void ProcessarReconhecimento(object sender, SpeechRecognizedEventArgs e)
@@ -110,7 +115,12 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
                 try
                 {
+                    gif.Enabled = true;
+                    gif.Paint += new PaintEventHandler(this.pictureBox1_Paint);
                     gif.Image = (Image)Resources.ResourceManager.GetObject(palavraFalada, culture);
+
+                    FrameDimension dimension = new FrameDimension(gif.Image.FrameDimensionsList[0]);
+                    this.QuantidadeFrame = gif.Image.GetFrameCount(dimension);
 
                 }
                 catch (System.Exception e)
@@ -119,6 +129,18 @@ namespace iLibra.ReconhecimentoVoz.Reconhecimento
 
                 }
             }
+        }
+
+        private void pictureBox1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            if (this.FrameAtual == this.QuantidadeFrame)
+            {
+                gif.Enabled = false;
+                gif.Image = null;
+                gif.Paint -= new PaintEventHandler(this.pictureBox1_Paint);
+                this.FrameAtual = 0;
+            }
+            this.FrameAtual++;
         }
     }
 }
